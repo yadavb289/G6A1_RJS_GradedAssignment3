@@ -1,0 +1,102 @@
+body {
+	background: #ffffff;
+	color: #000000;
+}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+#rightbox > table tr th {
+	width: 150px;
+	float: left;
+	text-align: left;
+	padding: 5px;
+
+}
+
+#posterImg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+
+.image-container {
+	height: 300px;
+	width: 150px;
+	margin: 25px;
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(230, 225, 225, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 16px;
+	padding: 20px;
+	text-align: center;
+}
+
+#searchBar{
+    height: -200px;
+    width: 100%;
+    padding: 8%;
+   
+   
+}
+
+#singleMovie{
+	padding:4%;
+	height: 100%;
+	width: 100%;
+}
+
+#singleMovieImg{
+	height: 100%;
+}
+
+#rightbox{
+	float:right;
+	width:70%;
+	height:100%;
+	font-size: medium;
+}
+#leftbox {
+	padding-left: 2%;
+	float:left;
+	width: 200px;;
+	height:350px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgb(0, 0, 0);
+	border-radius: 10px;
+	width: 250px;
+  }
+  
+  /* Handle */
+ ::-webkit-scrollbar-thumb {
+	background: white(255, 0, 0, 0);
+	border-radius: 10px;
+  }
